@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  azurecicdtest:
+    image: ${DOCKER_REGISTRY}azurecicdtest
+    build:
+      context: .\AzureCICDTest
+      dockerfile: Dockerfile
